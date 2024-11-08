@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keranjang - Bake & Bliss</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff; /* Ungu Elegan */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Navbar style */
+        nav {
+            background-color: #343a40; /* Biru Dongker */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 30px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f8f9fa;
+        }
+
+        /* Main content style */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #343a40;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        .cart-table th,
+        .cart-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .cart-table th {
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+        }
+
+        .cart-table td {
+            font-size: 16px;
+        }
+
+        .cart-table .product-name {
+            text-align: left;
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 20px;
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .cart-total span {
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #007bff;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Bake & Bliss Shop</h1>
+        <p>Cookies Pastry, dan Dessert Terlezat di Setiap Gigitan!</p>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Produk.html">Produk</a>
+        <a href="Kontak.html">Kontak</a>
+        <a href="#">Keranjang</a>
+    </nav>
+
+    <!-- Main Content: Cart Section -->
+    <div class="container">
+        <h2>Keranjang Belanja Anda</h2>
+
+        <!-- Cart Table -->
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                    <th>Kuantitas</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Product Row 1 -->
+                <tr>
+                    <td class="product-name">Cookies Coklat</td>
+                    <td>Rp 50.000</td>
+                    <td>2</td>
+                    <td>Rp 100.000</td>
+                    <td><button class="remove-btn">Hapus</button></td>
+                </tr>
+
+                <!-- Example Product Row 2 -->
+                <tr>
+                    <td class="product-name">Cookies Vanilla</td>
+                    <td>Rp 45.000</td>
+                    <td>1</td>
+                    <td>Rp 45.000</td>
+                    <td><button class="remove-btn">Hapus</button></td>
+                </tr>
+
+                <!-- Example Product Row 3 -->
+                <tr>
+                    <td class="product-name">Cookies Strawberry</td>
+                    <td>Rp 55.000</td>
+                    <td>3</td>
+                    <td>Rp 165.000</td>
+                    <td><button class="remove-btn">Hapus</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Cart Total -->
+        <div class="cart-total">
+            <span>Total Harga</span>
+            <span>Rp 310.000</span>
+        </div>
+
+        <!-- Checkout Button -->
+        <button class="checkout-btn">Lanjutkan ke Pembayaran</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bake & Bliss Team - Semua Hak Dilindungi</p>
+    </footer>
+
+</body>
+
+</html>
